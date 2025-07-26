@@ -42,7 +42,18 @@ This project demonstrates DevOps skills by building, deploying, and automating a
   ```bash
   docker logs (container_name)
   ```
-- App is Dockerized successfully but i want to enhance some points  
+- App is Dockerized successfully but i want to enhance some points 
+ - Enhance base image using node:20-alpine instead of node:20 that has many advantages
+    - Lightweight: Alpine images are very small that reduces build time and image size.
+    ![node:20](C:\Users\Mohamed\Documents\Todos-nodejs\assets\screenshots\2025-07-27.png)
+
+    - Faster Deployments: Smaller images are quicker to pull/push to registries and start faster in containers.
+    - **Important one** -> Improved Security: Fewer packages means a smaller attack surface.
+
+
+
+ - Use .dockerignore file that 
+ - Use Vloumes 
 
 
   
