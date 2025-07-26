@@ -21,7 +21,10 @@ This project demonstrates DevOps skills by building, deploying, and automating a
   git clone https://github.com/Ankit6098/Todos-nodejs
 ```
 #### Phase 2
-- Use My Own MongoDB Database: Update the .env file with My MongoDB Atlas connection string.
+- Use My Own MongoDB Database:
+  - Login to my mongoDB Atlas account 
+  - Create free cluster and Database(Todos-nodeDB)
+  - Take connection string and update the .env file with My MongoDB Atlas connection string.
 #### Phase 3
 - 🐳 Dockerize the application.
   - Write Docker File (image) Syntax
