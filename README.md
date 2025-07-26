@@ -46,6 +46,7 @@ This project demonstrates DevOps skills by building, deploying, and automating a
  - Enhance base image using node:20-alpine instead of node:20 that has many advantages
     - Lightweight: Alpine images are very small that reduces build time and image size.
     ![node:20](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27.png)
+    ![node:20-alpine](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(3).png)
 
     - Faster Deployments: Smaller images are quicker to pull/push to registries and start faster in containers.
     - **Important one** -> Improved Security: Fewer packages means a smaller attack surface.
