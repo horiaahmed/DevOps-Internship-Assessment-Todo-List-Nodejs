@@ -61,16 +61,15 @@ This project demonstrates DevOps skills by building, deploying, and automating a
     docker run --name (container_name) -v ${PWD}:/(WORKDIR):ro -d -p 4000:4000 (image_name)
     ```
   - finally used docker-compose simple file to build image and run containers in easy way
- 
-    Run container&build image 
+  - Run container&build image 
    ```bash
    docker-compose up -d --build
    ```
-    Just run container 
+    - Just run container 
    ```bash
     docker-compose up -d 
    ```
-    Stop container 
+    - Stop container 
    ```bash
    docker-compose down
    ```
