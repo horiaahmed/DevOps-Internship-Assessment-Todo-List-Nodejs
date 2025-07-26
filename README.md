@@ -43,34 +43,34 @@ This project demonstrates DevOps skills by building, deploying, and automating a
   docker logs (container_name)
   ```
 - App is Dockerized successfully but i want to enhance some points 
- - Enhance base image using node:20-alpine instead of node:20 that has many advantages
+  - Enhance base image using node:20-alpine instead of node:20 that has many advantages
     - Lightweight: Alpine images are very small that reduces build time and image size.
     ![node:20](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27.png)
     ![node:20-alpine](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(3).png)
 
     - Faster Deployments: Smaller images are quicker to pull/push to registries and start faster in containers.
     - **Important one** -> Improved Security: Fewer packages means a smaller attack surface.
- - Use .dockerignore file that 
-   - Reducing image size (excludes unnecessary files like node_modules)
+  - Use .dockerignore file that 
+    - Reducing image size (excludes unnecessary files like node_modules)
 
- - Use Vloumes like **Anonymous Volumes** 
-   - Data is preserved across container restarts and when update in source code container is up to date automatically.
-   - But to make sure not damage in the source code i used (ro)read only option that make one way update from (source code -> container)
-   - Volume command 
+  - Use Vloumes like **Anonymous Volumes** 
+    - Data is preserved across container restarts and when update in source code container is up to date automatically.
+    - But to make sure not damage in the source code i used (ro)read only option that make one way update from (source code -> container)
+    - Volume command 
    ```bash
     docker run --name (container_name) -v ${PWD}:/(WORKDIR):ro -d -p 4000:4000 (image_name)
     ```
- - finally used docker-compose simple file to build image and run containers in easy way
+  - finally used docker-compose simple file to build image and run containers in easy way
  
     Run container&build image 
    ```bash
    docker-compose up -d --build
    ```
-   Just run container 
+    Just run container 
    ```bash
-   docker-compose up -d 
+    docker-compose up -d 
    ```
-   Stop container 
+    Stop container 
    ```bash
    docker-compose down
    ```
