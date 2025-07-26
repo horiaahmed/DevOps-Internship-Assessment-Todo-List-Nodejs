@@ -14,7 +14,7 @@ This project demonstrates DevOps skills by building, deploying, and automating a
 ---
 
 ## Project Steps
-###  Part 1 – Application Setup & CI Pipeline
+###  Part 1 – Application Setup & CI Pipeline Using Github Actions
 #### Phase 1
 - Clone Repo https://github.com/Ankit6098/Todo-List-nodejs 
 ```bash
