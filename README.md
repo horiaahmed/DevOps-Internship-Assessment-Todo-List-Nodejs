@@ -50,11 +50,19 @@ This project demonstrates DevOps skills by building, deploying, and automating a
 
     - Faster Deployments: Smaller images are quicker to pull/push to registries and start faster in containers.
     - **Important one** -> Improved Security: Fewer packages means a smaller attack surface.
-
-
-
  - Use .dockerignore file that 
- - Use Vloumes 
+   - Reducing image size (excludes unnecessary files like node_modules)
+
+ - Use Vloumes like **Anonymous Volumes** 
+   - Data is preserved across container restarts and when update in source code container is up to date automatically.
+   - But to make sure not damage in the source code i used (ro)read only option that make one way update from (source code -> container)
+   - Volume command 
+   ```bash
+    docker run --name (container_name) -v ${PWD}:/(WORKDIR):ro -d -p 4000:4000 (image_name)
+    ```
+
+
+
 
 
   
