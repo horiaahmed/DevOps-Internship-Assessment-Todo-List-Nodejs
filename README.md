@@ -15,11 +15,14 @@ This project demonstrates DevOps skills by building, deploying, and automating a
 
 ## Project Steps
 ###  Part 1 – Application Setup & CI Pipeline
+#### Phase 1
 - Clone Repo https://github.com/Ankit6098/Todo-List-nodejs 
 ```bash
   git clone https://github.com/Ankit6098/Todos-nodejs
 ```
+#### Phase 2
 - Use My Own MongoDB Database: Update the .env file with My MongoDB Atlas connection string.
+#### Phase 3
 - 🐳 Dockerize the application.
   - Write Docker File (image) Syntax
   - Build Docker image with
@@ -73,6 +76,7 @@ This project demonstrates DevOps skills by building, deploying, and automating a
    ```bash
    docker-compose down
    ```
+#### Phase 4
 
 
 
