@@ -19,7 +19,7 @@ This project demonstrates DevOps skills by building, deploying, and automating a
 ```bash
   git clone https://github.com/Ankit6098/Todos-nodejs
 ```
-- Use Your Own MongoDB Database: Update the .env file with My MongoDB Atlas connection string.
+- Use My Own MongoDB Database: Update the .env file with My MongoDB Atlas connection string.
 - 🐳 Dockerize the application.
   - Write Docker File (image) Syntax
   - Build Docker image with
@@ -60,6 +60,21 @@ This project demonstrates DevOps skills by building, deploying, and automating a
    ```bash
     docker run --name (container_name) -v ${PWD}:/(WORKDIR):ro -d -p 4000:4000 (image_name)
     ```
+ - finally used docker-compose simple file to build image and run containers in easy way
+ 
+    Run container&build image 
+   ```bash
+   docker-compose up -d --build
+   ```
+   Just run container 
+   ```bash
+   docker-compose up -d 
+   ```
+   Stop container 
+   ```bash
+   docker-compose down
+   ```
+
 
 
 
