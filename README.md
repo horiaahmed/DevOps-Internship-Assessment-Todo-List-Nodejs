@@ -80,6 +80,13 @@ This project demonstrates DevOps skills by building, deploying, and automating a
    docker-compose down
    ```
 #### Phase 4
+- Use GitHub Actions to create a CI pipeline that builds the image and pushes it to
+a private docker registry.
+    - first i made the .yml file in .github/workflow directory
+    - wrote the file syntax make the workflow trigger in two events (push and pull_request)
+    - I used private repository in dockerhub as private docker registry and linked with github with username and password in actions secrets
+    - finally pushed changes so workflow was triggerd and image built and pushed to repo in dockerhub
+    
 
 
 
