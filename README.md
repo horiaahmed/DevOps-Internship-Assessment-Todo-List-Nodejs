@@ -90,7 +90,29 @@ a private docker registry.
     ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(5).png)
     - **Enhance build in .yml file** : used **QEMU** to build images for different CPU architectures and ensure that image build works on various platforms
 --- 
-###  Part 2 – Automation Using Ansible 
+###  Part 2 – Automation Using **Ansible** 
+#### Phase1 
+- Create a Linux VM on your local machine or the Cloud.
+   I Created Both:
+   - I already use Orcale VM on my local macine 
+   - And Created Linux VM on cloud (**AWS**) 
+      - Lanching EC2 instance with os Ubuntu
+      - Copy public ip address
+      - Generate New pair key and use .pem file to connect to local machine using ssh with
+      ```bash
+      ssh -i ssh -i path/vm-aws.pem ubuntu@13.51.79.251 ubuntu@13.51.79.251
+      ```
+      ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27 (7).png)
+
+
+
+
+
+
+
+
+
+
 
 
 
