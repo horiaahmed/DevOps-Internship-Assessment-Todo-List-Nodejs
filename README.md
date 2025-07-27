@@ -86,7 +86,8 @@ a private docker registry.
     - wrote the file syntax make the workflow trigger in two events (push and pull_request)
     - I used private repository in dockerhub as private docker registry and linked with github with username and password in actions secrets
     - finally pushed changes so workflow was triggerd and image built and pushed to repo in dockerhub
-    
+    ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(6).png)
+    ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(5).png)
 
 
 
