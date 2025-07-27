@@ -117,7 +117,7 @@ Docker.
 ansible-playbook -i inventory/host.ini playbook.yml
 ```
 - Machine configured,docker installed and started it successfully 
-![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-28.png)
+![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-28%20(6).png)
 
 
 
