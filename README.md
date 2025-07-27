@@ -88,6 +88,7 @@ a private docker registry.
     - finally pushed changes so workflow was triggerd and image built and pushed to repo in dockerhub
     ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(6).png)
     ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(5).png)
+    - **Enhance build in .yml file** : used **QEMU** to build images for different CPU architectures and ensure that image build works on various platforms
 
 
 
