@@ -90,7 +90,7 @@ a private docker registry.
     ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(5).png)
     - **Enhance build in .yml file** : used **QEMU** to build images for different CPU architectures and ensure that image build works on various platforms
 --- 
-## Part 2 – Ansible
+###  Part 2 – Automation Using Ansible 
 
 
 
