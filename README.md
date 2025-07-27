@@ -14,7 +14,7 @@ This project demonstrates DevOps skills by building, deploying, and automating a
 ---
 
 ## Project Steps
-###  Part 1 – Application Setup & CI Pipeline Using Github Actions
+###  **Part 1 – Application Setup & CI Pipeline Using Github Actions**
 #### Phase 1
 - Clone Repo https://github.com/Ankit6098/Todo-List-nodejs 
 ```bash
@@ -90,7 +90,7 @@ a private docker registry.
     ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(5).png)
     - **Enhance build in .yml file** : used **QEMU** to build images for different CPU architectures and ensure that image build works on various platforms
 --- 
-###  Part 2 – Automation Using **Ansible** 
+###  **Part 2 – Automation Using **Ansible****
 #### Phase1 
 - Create a Linux VM on your local machine or the Cloud.
    I Created Both:
@@ -102,7 +102,8 @@ a private docker registry.
       ```bash
       ssh -i ssh -i path/vm-aws.pem ubuntu@13.51.79.251 ubuntu@13.51.79.251
       ```
-      ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27 (7).png)
+      ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(7).png)
+      ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(9).png)
 
 
 
