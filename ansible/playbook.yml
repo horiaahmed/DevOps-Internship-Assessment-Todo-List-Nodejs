@@ -1,0 +1,17 @@
+- name: Configure and Install Docker on VM
+  hosts: server
+  become: yes
+  tasks:
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+        update_cache: yes
+    - name: Start and enable Docker service
+      systemd:
+        name: docker
+        enabled: true
+        state: started
+
+  
+  

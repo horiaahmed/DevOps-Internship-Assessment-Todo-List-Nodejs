@@ -10,7 +10,8 @@ This project demonstrates DevOps skills by building, deploying, and automating a
 - Ansible Automation: Use Ansible to install Docker and it should run from My local machine against the VM.
 - Used docker compose to run the application instead of docker build.
 - With auto update part like (Watchtowr).
-- Process Advanced with Kubernetes on the VM.
+- Process Advanced with Kubernetes on the VM and use ArgoCD for the CD part.
+
 ---
 
 ## Project Steps
@@ -90,7 +91,7 @@ a private docker registry.
     ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(5).png)
     - **Enhance build in .yml file** : used **QEMU** to build images for different CPU architectures and ensure that image build works on various platforms
 --- 
-###  **Part 2 – Automation Using **Ansible****
+###  Part 2 – Automation Using **Ansible**
 #### Phase1 
 - Create a Linux VM on your local machine or the Cloud.
    I Created Both:
@@ -104,9 +105,19 @@ a private docker registry.
       ```
       ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(7).png)
       ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(9).png)
-
-
-
+#### Phase2
+- Use Ansible to configure the machine and install the needed packages such as
+Docker.
+- Across using windows must use tools that allow you to run a Linux environment like **WSL** makes me deals easly with ansible
+- After installation i defiend ansible directory structure that has:
+     - inventory folder with .ini file where i defined the hosts under groups to be managed
+     - playbook .yml file that has instructions that run on the hosts using groups 
+- Then run the ansible with playbook with 
+```bash
+ansible-playbook -i inventory/host.ini playbook.yml
+```
+- Machine configured,docker installed and started it successfully 
+![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-28%20(9).png)
 
 
 
