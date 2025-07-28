@@ -108,20 +108,20 @@ a private docker registry.
 #### Phase 2 & 3
 - Use Ansible to configure the machine and install the needed packages such as
 Docker.
-- Across using windows must use tools that allow you to run a Linux environment like **WSL** makes me deals easly with ansible
-- After installation i defiend ansible directory structure that has:
+  - Across using windows must use tools that allow you to run a Linux environment like **WSL** makes me deals easly with ansible
+  - After installation i defiend ansible directory structure that has:
      - inventory folder with .ini file where i defined the hosts under groups to be managed
      - playbook .yml file that has instructions that run on the hosts using groups 
-- Then run the ansible with playbook with 
-```bash
-ansible-playbook -i inventory/host.ini playbook.yml
-```
-- First use one host (aws-ec2)  
-- Machine configured,docker installed and started it successfully 
-![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-28%20(6).png)
-- Then I want to increase availability by managing more than one host and made automation on both [ orcale-vm and cloud machine (aws-ec2) ]
-- Two Hosts Managed successfully
-![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-28%20(7).png)
+  - Then run the ansible with playbook with 
+  ```bash
+  ansible-playbook -i inventory/host.ini playbook.yml
+  ```
+  - First use one host (aws-ec2)  
+  - Machine configured,docker installed and started it successfully 
+  ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-28%20(6).png)
+  - Then I want to increase availability by managing more than one host and made automation on both [ orcale-vm and cloud machine (aws-ec2) ]
+  - Two Hosts Managed successfully
+  ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-28%20(7).png)
 
 By compelete this **phase 2&3**  
 Ansible has to run from your local machine against the VM. This requirement was also achieved 
