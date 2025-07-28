@@ -4,8 +4,6 @@ COPY package*.json .
 EXPOSE 4000
 
 
-
-
 FROM base as development 
 RUN npm install
 COPY . .
