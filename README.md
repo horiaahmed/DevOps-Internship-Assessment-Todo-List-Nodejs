@@ -140,6 +140,10 @@ the proper health checks.
     Then Logined to vm on aws
        - installed docker-compose 
        - Cloned My repo
+       - login to docker with personal cardiential 
+       ```bash
+       docker login 
+       ```
        - pulled docker image that declared in docker-compose file from dockerhub repository by
        ```bash
        docker-compose pull
