@@ -1,9 +1,7 @@
 FROM node:20-alpine as base
-RUN sudo apt-get update && sudo apt-get install -y curl
 
 WORKDIR /todos_app
 EXPOSE 4000
-
 
 FROM base as development 
 COPY package*.json .
