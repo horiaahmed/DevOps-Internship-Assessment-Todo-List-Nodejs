@@ -13,6 +13,7 @@ const app = express();
 
 // path: routes\index.js
 app.get('/', require('./routes'));
+app.get('/hello', require('./routes'));
 app.get('/dashboard', require('./routes'));
 app.get('/register', require('./routes'));
 app.get('/login', require('./routes'));
