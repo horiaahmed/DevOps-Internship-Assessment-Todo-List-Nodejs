@@ -92,7 +92,7 @@ a private docker registry.
     - **Enhance build in .yml file** : used **QEMU** to build images for different CPU architectures and ensure that image build works on various platforms
 --- 
 ###  Part 2 – Automation Using **Ansible**
-#### Phase1 
+#### Phase 1 
 - Create a Linux VM on your local machine or the Cloud.
    I Created Both:
    - I already use Orcale VM on my local macine 
@@ -129,7 +129,8 @@ Docker.
 By compelete this **phase 2&3**  
 Ansible has to run from your local machine against the VM. This requirement was also achieved 
 ---
-## Part3 -  Running Application with Docker Compose and Automated Image Updates on VM
+## Part 3 -  Running Application with Docker Compose and Automated Image Updates on VM
+#### Phase 1
 - On the VM, use docker compose to run the application. Make sure you configure
 the proper health checks.
    - I previously used simple docker-compose in part 1 in my local But i wanted to Enhance it
