@@ -120,13 +120,16 @@ Docker.
   - Machine configured,docker installed and started it successfully 
   ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-28%20(6).png)
   - Then I want to increase availability by managing more than one host and made automation on both [ orcale-vm and cloud machine (aws-ec2) ]
+  - Manged them with two diffrent access ways 
+     - ec2-instance : Connected with ssh **nsible_ssh_private_key_file=~/.ssh/vm-aws.pem**
+     - orcale vm : Connected with password **ansible_ssh_pass=********
   - Two Hosts Managed successfully
   ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-28%20(7).png)
 
 By compelete this **phase 2&3**  
 Ansible has to run from your local machine against the VM. This requirement was also achieved 
 ---
-### Part3 - 
+###  Part3 - Build with Docker Compose on VM
 
 
 
