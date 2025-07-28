@@ -129,7 +129,7 @@ Docker.
 By compelete this **phase 2&3**  
 Ansible has to run from your local machine against the VM. This requirement was also achieved 
 ---
-###  Part3 -  Running Application with Docker Compose and Automated Image Updates on VM
+## Part3 -  Running Application with Docker Compose and Automated Image Updates on VM
 - On the VM, use docker compose to run the application. Make sure you configure
 the proper health checks.
    - I previously used simple docker-compose in part 1 in my local But i wanted to Enhance it
@@ -148,7 +148,7 @@ the proper health checks.
        ```
        docker-compose -f (main-compose-file).yml -f (specific-file).yml up -d
        ```
-![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots2025-07-29.png)
+![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-29.png)
 
 
 
