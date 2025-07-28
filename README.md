@@ -15,7 +15,7 @@ This project demonstrates DevOps skills by building, deploying, and automating a
 ---
 
 ## Project Steps
-###  **Part 1 – Application Setup & CI Pipeline Using Github Actions**
+## Part 1 – Application Setup & CI Pipeline Using Github Actions
 #### Phase 1
 - Clone Repo https://github.com/Ankit6098/Todo-List-nodejs 
 ```bash
@@ -91,7 +91,7 @@ a private docker registry.
     ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(5).png)
     - **Enhance build in .yml file** : used **QEMU** to build images for different CPU architectures and ensure that image build works on various platforms
 --- 
-###  Part 2 – Automation Using **Ansible**
+## Part 2 – Automation Using **Ansible**
 #### Phase 1 
 - Create a Linux VM on your local machine or the Cloud.
    I Created Both:
@@ -125,8 +125,7 @@ Docker.
      - orcale vm : Connected with password **ansible_ssh_pass=********
   - Two Hosts Managed successfully
   ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-28%20(7).png)
-
-By compelete this **phase 2&3**  
+By compelete this phase **2&3**
 Ansible has to run from your local machine against the VM. This requirement was also achieved 
 ---
 ## Part 3 -  Running Application with Docker Compose and Automated Image Updates on VM
