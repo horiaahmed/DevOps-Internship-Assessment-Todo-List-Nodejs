@@ -142,8 +142,13 @@ the proper health checks.
        - Cloned My repo
        - pulled docker image that declared in docker-compose file from dockerhub repository by
        ```bash
-
-    -  
+       docker-compose pull
+       ```
+       - Run container with pulled image using docker-compose
+       ```
+       docker-compose -f (main-compose-file).yml -f (specific-file).yml up -d
+       ```
+![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots2025-07-29.png)
 
 
 
