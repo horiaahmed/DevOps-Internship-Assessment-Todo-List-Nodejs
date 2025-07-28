@@ -137,7 +137,6 @@ the proper health checks.
           - Edit package.json to has "devDependencies" section that contain packages only using in development 
           - Split the Docker Compose setup into a main file and two environment specific configurations like (target,Volumes,...)
           - Used MultiStage Dockerfile to **enhance organization – separate stages for development and production - make Dockerfiles cleaner**
-
     Then Logined to vm on aws
        - installed docker-compose 
        - Cloned My repo

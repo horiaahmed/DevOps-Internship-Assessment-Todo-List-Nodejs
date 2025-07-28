@@ -1,4 +1,6 @@
-FROM node:20-alpine as base 
+FROM node:20-alpine as base
+RUN apt-get update && apt-get install -y curl
+
 WORKDIR /todos_app
 EXPOSE 4000
 
