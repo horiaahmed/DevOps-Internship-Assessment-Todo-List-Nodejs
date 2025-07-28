@@ -101,7 +101,7 @@ a private docker registry.
       - Copy public ip address
       - Generate New pair key and use .pem file to connect to local machine using ssh with
       ```bash
-      ssh -i ssh -i path/vm-aws.pem ubuntu@13.51.79.251 ubuntu@13.51.79.251
+      ssh -i ssh -i path/vm-aws.pem ubuntu@13.51.79.251 
       ```
       ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(7).png)
       ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(9).png)
