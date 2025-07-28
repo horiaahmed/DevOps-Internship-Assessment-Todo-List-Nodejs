@@ -123,8 +123,8 @@ ansible-playbook -i inventory/host.ini playbook.yml
 - Two Hosts Managed successfully
 ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-28%20(7).png)
 
-By compeleted this **phase 2&3**  
-Ansible has to run from your local machine against the VM. This requirement also achieved 
+By compelete this **phase 2&3**  
+Ansible has to run from your local machine against the VM. This requirement was also achieved 
 ---
 ### Part3 - 
 
