@@ -3,6 +3,7 @@ services:
    todos_app:
     container_name: todos_container
     build: .
+    image: horia22/todos-nodejs
     ports: 
       - "4000:4000"
     volumes:
