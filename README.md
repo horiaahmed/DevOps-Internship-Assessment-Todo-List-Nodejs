@@ -116,8 +116,13 @@ Docker.
 ```bash
 ansible-playbook -i inventory/host.ini playbook.yml
 ```
+- First use one host (aws-ec2)  
 - Machine configured,docker installed and started it successfully 
 ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-28%20(6).png)
+- Then I want to increase availability by managing more than one host and made automation on both [ orcale-vm and cloud machine (aws-ec2) ]
+- Two Hosts Managed successfully
+![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-28%20(7).png)
+
 
 
 

@@ -1,5 +1,5 @@
-- name: Configure and Install Docker on VM
-  hosts: server
+- name: Configure and Install Docker on VM(ec2)
+  hosts: aws-server
   become: yes
   tasks:
     - name: Install Docker
@@ -13,5 +13,17 @@
         enabled: true
         state: started
 
-  
-  
+- name: Configure and Install Docker on Oracle VM (CentOS)
+  hosts: oracle-vm
+  become: yes
+  tasks:
+    - name: Install Docker
+      yum:
+        name: docker
+        state: present
+
+    - name: Start and enable Docker service
+      systemd:
+        name: docker
+        enabled: true
+        state: started
