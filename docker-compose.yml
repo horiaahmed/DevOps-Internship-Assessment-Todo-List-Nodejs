@@ -6,10 +6,6 @@ services:
     image: horia22/todos-nodejs
     ports: 
       - "4000:4000"
-    volumes:
-      - .:/todos_app:ro 
     env_file:
-      - .env
-    environment:
-      - NODE_ENV=production
+      - .env 
 

@@ -1,0 +1,11 @@
+version: '3'
+services:
+   todos_app:
+    build:
+      context: .
+      target : development
+    volumes:
+      - .:/todos_app:ro 
+    environment:
+      - NODE_ENV=development
+

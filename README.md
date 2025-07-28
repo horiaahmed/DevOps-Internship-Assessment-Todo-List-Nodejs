@@ -129,7 +129,7 @@ Docker.
 By compelete this **phase 2&3**  
 Ansible has to run from your local machine against the VM. This requirement was also achieved 
 ---
-###  Part3 - Build with Docker Compose on VM
+###  Part3 -  Running Application with Docker Compose and Automated Image Updates on VM
 
 
 
