@@ -8,10 +8,17 @@ services:
       - "4000:4000"
     env_file:
       - .env 
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:4000"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 5s
+    # healthcheck:
+    #   test: ["CMD", "curl", "-f", "http://localhost:4000"]
+    #   interval: 30s
+    #   timeout: 10s
+    #   retries: 3
+    #   start_period: 5s
+   watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 30
 
