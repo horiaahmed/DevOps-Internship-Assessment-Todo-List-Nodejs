@@ -132,7 +132,8 @@ Ansible has to run from your local machine against the VM. **This requirement wa
 #### Phase 1
 - On the VM, use docker compose to run the application. Make sure you configure
 the proper health checks.
-   - I previously used simple docker-compose in part 1 on my local But i wanted to Enhance it
+   - I previously used simple docker-compose in part 1 on my local But i wanted to Enhance it 
+      - Add healthchecks :To ensure a container is running correctly and restart it automatically if it's unhealthy.
       - Implemented changes to enable better control over development and production environment
           - Edit package.json to has "devDependencies" section that contain packages only using in development 
           - Split the Docker Compose setup into a main file and two environment specific configurations like (target,Volumes,...)
