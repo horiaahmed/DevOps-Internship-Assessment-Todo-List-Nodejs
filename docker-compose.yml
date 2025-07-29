@@ -18,7 +18,7 @@ services:
       - WATCHTOWER_POLL_INTERVAL=30
       - WATCHTOWER_CLEANUP=true
       - WATCHTOWER_USERNAME=horia22
-      - WATCHTOWER_PASSWORD=horia22157
+      - WATCHTOWER_PASSWORD=horia15722
     restart: unless-stopped
   
 
