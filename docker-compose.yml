@@ -17,8 +17,7 @@ services:
     environment:
       - WATCHTOWER_POLL_INTERVAL=30
       - WATCHTOWER_CLEANUP=true
-      - WATCHTOWER_USERNAME=horia22
-      - WATCHTOWER_PASSWORD=horia15722
+      - WATCHTOWER_DOCKER_CONFIG=/config.json
     restart: unless-stopped
   
 
