@@ -175,6 +175,10 @@ repo. If a change is detected, the new image should be pulled With auto update.
       ```
       Then when make new updates new image will be pulled automatically and Watchtower removes current container and starts new one with new updates
       ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-29%20(5).png)
+--- 
+## Part 4 - Kubernetes & ArgoCD
+
+
 
 
 
