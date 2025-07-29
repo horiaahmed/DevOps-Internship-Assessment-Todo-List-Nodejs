@@ -1,6 +1,6 @@
 version: '3'
 services:
-   todos_app:
+  todos_app:
     container_name: todos_container
     build: .
     image: horia22/todos-nodejs
@@ -14,11 +14,11 @@ services:
     #   timeout: 10s
     #   retries: 3
     #   start_period: 5s
-    watchtower:
-     image: containrrr/watchtower
-     container_name: watchtower
-     volumes:
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-     command: --interval 30 --cleanup
-     restart: unless-stopped
+    command: --interval 30 --cleanup
+    restart: unless-stopped
 
