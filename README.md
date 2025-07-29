@@ -172,7 +172,7 @@ repo. If a change is detected, the new image should be pulled With auto update.
       ```bash
       docker logs -f watchtower
       ```
-      Then when make new update new image will pulled automatically and it remove current container and start new one with updates
+      Then when make new updates new image will be pulled automatically and Watchtower removes current container and starts new one with new updates
       ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-29%20(5).png)
 
 
