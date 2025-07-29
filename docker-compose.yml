@@ -18,6 +18,6 @@ services:
       - WATCHTOWER_POLL_INTERVAL=30
       - WATCHTOWER_CLEANUP=true
       - WATCHTOWER_DOCKER_CONFIG=/config.json
-    restart: unless-stopped
+    # restart: unless-stopped
   
 
