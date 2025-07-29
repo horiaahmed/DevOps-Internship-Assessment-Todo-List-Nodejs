@@ -1,5 +1,5 @@
 FROM node:20-alpine as base
-
+COPY package*.json .
 WORKDIR /todos_app
 EXPOSE 4000
 
