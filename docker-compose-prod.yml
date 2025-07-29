@@ -6,14 +6,3 @@ services:
       target : production
     environment:
       - NODE_ENV=production
-  watchtower:
-    image: containrrr/watchtower
-    container_name: watchtower
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    command: --interval 30 --cleanup todos_container
-    environment:
-      - WATCHTOWER_POLL_INTERVAL=30
-      - WATCHTOWER_CLEANUP=true
-      - WATCHTOWER_DOCKER_CONFIG=/config.json
-    restart: unless-stopped
