@@ -14,11 +14,11 @@ services:
     #   timeout: 10s
     #   retries: 3
     #   start_period: 5s
-   watchtower:
-    image: containrrr/watchtower
-    container_name: watchtower
-    restart: unless-stopped
-    volumes:
+    watchtower:
+     image: containrrr/watchtower
+     container_name: watchtower
+     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: --interval 30
+     command: --interval 30 --cleanup
+     restart: unless-stopped
 
