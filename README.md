@@ -154,7 +154,26 @@ the proper health checks.
        ```
 ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-29.png)
 
-
+#### Phase 2 & 3 
+- You need to continuously check for changes in the image on the docker registry
+repo. If a change is detected, the new image should be pulled With auto update.
+  - After changes in code and push to github the CI Pipline works and build new image and pushed it to dockerhub in my private repository it alwayes be latest image then to make new image pulled automatically i preferd to use
+   **watctower** tool because:
+      - It Easy to Configure without any installation proccess it just run more one container (watchtower container) 
+      - Simple deployment automate tool to use with small/medium application 
+      - Can control logs in east way just with passing environment argument you want to add (interval,trace,...) 
+    You can use watchtower in two ways:
+      - Just add new service in docker-compose file that when run containes with docker-compose watchtower container is created and listen to my containers
+      - Or build watchtower container manually for one time with docker in Cli using
+      ```bash 
+      docker run -d --name watchtower -e REPO_USER=user -e REPO_PASS=pass -e WATCHTOWER_TRACE=true -e WATCHTOWER_POLL_INTERVAL=30 -v /var/run/docker.sock:/var/run/docker.sock  containrrr/watchtower
+      ```
+      Show watchtower logs with 
+      ```bash
+      docker logs -f watchtower
+      ```
+      Then when make new update new image will pulled automatically and it remove current container and start new one with updates
+      ![alt text](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-29%(5).png)
 
 
 
