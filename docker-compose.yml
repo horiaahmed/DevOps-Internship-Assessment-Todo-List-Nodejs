@@ -14,5 +14,11 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     command: --interval 30 --cleanup
+    environment:
+      - WATCHTOWER_POLL_INTERVAL=30
+      - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_USERNAME=horia22
+      - WATCHTOWER_PASSWORD=horia22157
     restart: unless-stopped
+  
 
