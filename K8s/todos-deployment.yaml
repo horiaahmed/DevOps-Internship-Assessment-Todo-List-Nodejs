@@ -20,7 +20,7 @@ spec:
           ports:
             - containerPort: 4000
           env:
-            - name: MONGO_URI
+            - name: mongoDbUrl
               value: "mongodb+srv://horia:55EhCf40R0LhxnkW@devops.0ncrdau.mongodb.net/Todos_DB?retryWrites=true&w=majority"
       imagePullSecrets:
         - name: regcred
