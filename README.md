@@ -236,13 +236,7 @@ repo. If a change is detected, the new image should be pulled With auto update.
   --- 
 
 ## Skills
-- Docker
-- Docker compose
-- CI with Github Actions
-- Ansible
-- Auto Update with (WatchTower)
-- Kubernetes
-- CD with ArgoCD 
+Docker Docker compose CI with Github Actions Ansible Auto Update with (WatchTower) Kubernetes CD with ArgoCD 
   
 
    
