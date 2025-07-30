@@ -13,11 +13,13 @@ spec:
       labels:
         app: todos
     spec:
-      containers:
-        - name: todos
-          image: horia22/todos-nodejs:latest
-          ports:
-            - containerPort: 4000
-          env:
-            - name: MONGO_URI
-              value: "mongodb+srv://horia:55EhCf40R0LhxnkW@devops.0ncrdau.mongodb.net/Todos_DB?retryWrites=true&w=majority"
+  containers:
+    - name: todos
+      image: horia22/todos-nodejs:latest
+      ports:
+        - containerPort: 4000
+      env:
+        - name: MONGO_URI
+          value: "mongodb+srv://horia:55EhCf40R0LhxnkW@devops.0ncrdau.mongodb.net/Todos_DB?retryWrites=true&w=majority"
+  imagePullSecrets:
+    - name: regcred
