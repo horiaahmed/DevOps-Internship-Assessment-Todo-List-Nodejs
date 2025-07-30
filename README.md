@@ -177,6 +177,23 @@ repo. If a change is detected, the new image should be pulled With auto update.
       ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-29%20(5).png)
 --- 
 ## Part 4 Bouns- Kubernetes & ArgoCD
+#### Phase 1
+- **Orchestration App Using Kubernetes**
+    - Installed Kubernetes (k3s) and run a Kubernetes cluster on Vm Using 
+    ```bash
+    curl -sfL https://get.k3s.io | sh -
+    ```
+    - Ckeck cluster status using kubectl
+    ```bash
+    kubeectl get nodes
+    ``` 
+    ![alt text](<assets/screenshots/Screenshot (2).png>)
+    
+
+
+
+
+
 
 
 
