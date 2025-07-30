@@ -187,7 +187,31 @@ repo. If a change is detected, the new image should be pulled With auto update.
     ```bash
     kubeectl get nodes
     ``` 
-    ![alt text](<assets/screenshots/Screenshot (2).png>)
+    ![alt text](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/Screenshot%20(2).png)
+    - Defiend kubernets two files with .yaml:
+        - Deployment file : Controls the app deployment proccess inside the Kubernetes cluster (replicas,docker image,port,...)
+        - Service file : expose and make access easy outside using port
+        **Then two files work together using selector that app is defined in both**  
+    - Apply files to cluster using 
+    ```bash
+    kubectl apply -f deployment.yaml
+    kubectl apply -f todos-service.yaml
+     ```
+    - Ensure all is works correctly
+        - Get Deployments ,services and created pods
+        ```bash 
+        kubectl get deployments
+        kubectl get services
+        kubectl get pods
+        ```
+        ![alt text](<assets/screenshots/Screenshot (4).png>)
+
+    - finally can access my app through the port from service in browser in my case 31800 - http://VM_ip:31800
+    
+    
+
+
+
     
 
 
