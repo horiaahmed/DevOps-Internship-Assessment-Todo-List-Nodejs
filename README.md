@@ -230,11 +230,19 @@ repo. If a change is detected, the new image should be pulled With auto update.
     And create new app with
        - my gitHub repository link
        - set the path to the Kubernetes
-       - Chose the appropriate cluster and namespace for deployment
+       - chose the cluster and namespace for deployment
   - Finally to enshure app is running successfully -> show pods it must ne **Running**
   ![alt text](<assets/screenshots/Screenshot (7).png>)
   --- 
-  
+
+## Skills
+- Docker
+- Docker compose
+- CI with Github Actions
+- Ansible
+- Auto Update with (WatchTower)
+- Kubernetes
+- CD with ArgoCD 
   
 
    
