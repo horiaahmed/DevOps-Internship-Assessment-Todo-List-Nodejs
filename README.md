@@ -17,17 +17,17 @@ This project demonstrates DevOps skills by building, deploying, and automating a
 ## Project Steps
 ## Part 1 – Application Setup & CI Pipeline Using Github Actions
 #### Phase 1
-- Clone Repo https://github.com/Ankit6098/Todo-List-nodejs 
+- Task: Clone Repo https://github.com/Ankit6098/Todo-List-nodejs 
 ```bash
   git clone https://github.com/Ankit6098/Todos-nodejs
 ```
 #### Phase 2
-- Use My Own MongoDB Database:
+- Task: Use My Own MongoDB Database:
   - Login to my mongoDB Atlas account 
   - Create free cluster and Database(Todos-nodeDB)
   - Take connection string and update the .env file with My MongoDB Atlas connection string.
 #### Phase 3
-- 🐳 Dockerize the application.
+- Task: Dockerize the application.
   - Write Docker File (image) Syntax
   - Build Docker image with
   ```bash
@@ -81,7 +81,7 @@ This project demonstrates DevOps skills by building, deploying, and automating a
    docker-compose down
    ```
 #### Phase 4
-- Use GitHub Actions to create a CI pipeline that builds the image and pushes it to
+- Task: Use GitHub Actions to create a CI pipeline that builds the image and pushes it to
 a private docker registry.
     - first i made the .yml file in .github/workflow directory
     - wrote the file syntax make the workflow trigger in two events (push and pull_request)
@@ -93,7 +93,7 @@ a private docker registry.
 --- 
 ## Part 2 – Automation Using **Ansible**
 #### Phase 1 
-- Create a Linux VM on your local machine or the Cloud.
+- Task: Create a Linux VM on your local machine or the Cloud.
    I Created Both:
    - I already use Orcale VM on my local macine 
    - And Created Linux VM on cloud (**AWS**) 
@@ -106,7 +106,7 @@ a private docker registry.
       ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(7).png)
       ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-27%20(9).png)
 #### Phase 2 & 3
-- Use Ansible to configure the machine and install the needed packages such as
+- Task: Use Ansible to configure the machine and install the needed packages such as
 Docker.
   - Across using windows must use tools that allow you to run a Linux environment like **WSL** makes me deals easly with ansible
   - After installation i defiend ansible directory structure that has:
@@ -130,7 +130,7 @@ Ansible has to run from your local machine against the VM. **This requirement wa
 ---
 ## Part 3 -  Running Application with Docker Compose and Automated Image Updates on VM
 #### Phase 1
-- On the VM, use docker compose to run the application. Make sure you configure
+- Task: On the VM, use docker compose to run the application. Make sure you configure
 the proper health checks.
    - I previously used simple docker-compose in part 1 on my local But i wanted to Enhance it 
       - Add healthchecks :To ensure a container is running correctly and restart it automatically if it's unhealthy.
@@ -156,14 +156,14 @@ the proper health checks.
 ![](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/2025-07-29.png)
 
 #### Phase 2 & 3 
-- You need to continuously check for changes in the image on the docker registry
+- Task: You need to continuously check for changes in the image on the docker registry
 repo. If a change is detected, the new image should be pulled With auto update.
   - After changes in code and push to github the CI Pipline works and build new image and pushed it to dockerhub in my private repository it alwayes be latest image then to make new image pulled automatically i preferd to use
    **watctower** tool because:
       - It Easy to Configure without any installation proccess it just run more one container (watchtower container) 
       - Simple deployment automate tool to use with small/medium application 
       - Can control logs in east way just with passing environment argument you want to add (interval,trace,...) 
-    You can use watchtower in two ways:
+    i can use watchtower in two ways:
       - Just add new service in docker-compose file that when run containes with docker-compose watchtower container is created and listen to my containers
       - Or build watchtower container manually for one time with docker in Cli using
       ```bash 
@@ -178,7 +178,7 @@ repo. If a change is detected, the new image should be pulled With auto update.
 --- 
 ## Part 4 Bouns- Kubernetes & ArgoCD
 #### Phase 1
-- **Orchestration App Using Kubernetes**
+- Task: **Orchestration App Using Kubernetes**
     - Installed Kubernetes (k3s) and run a Kubernetes cluster on Vm Using 
     ```bash
     curl -sfL https://get.k3s.io | sh -
@@ -214,7 +214,7 @@ repo. If a change is detected, the new image should be pulled With auto update.
     - finally can access my app through the port from service in browser in my case 31800 - http://VM_ip:31800
 
 #### Phase 2   
-- **Continous Deployment using ArgoCD** 
+- Task: **Continous Deployment using ArgoCD** 
    - Installed using github repo
    - Confirm installaiton and runnig pods related to argocd using
    ```bash
