@@ -191,7 +191,12 @@ repo. If a change is detected, the new image should be pulled With auto update.
     - Defiend kubernets two files with .yaml:
         - Deployment file : Controls the app deployment proccess inside the Kubernetes cluster (replicas,docker image,port,...)
         - Service file : expose and make access easy outside using port
-        **Then two files work together using selector that app is defined in both**  
+        - Beacuse i used private repo on dockerhub i added dockerhub secrets in kubernets to can access image using 
+        ```bash
+        kubectl create secret docker-registry regcred --docker-username=user --docker-password=pass --docker-email=email
+        ```
+
+      **Then two files work together using selector that app is defined in both**  
     - Apply files to cluster using 
     ```bash
     kubectl apply -f deployment.yaml
@@ -207,9 +212,39 @@ repo. If a change is detected, the new image should be pulled With auto update.
         ![alt text](<assets/screenshots/Screenshot (4).png>)
 
     - finally can access my app through the port from service in browser in my case 31800 - http://VM_ip:31800
-    
-    
 
+#### Phase 2   
+- **Continous Deployment using ArgoCD** 
+   - Installed using github repo
+   - Confirm installaiton and runnig pods related to argocd using
+   ```bash
+   kubectl get pods -n argocd
+   ```
+   ![alt text](<assets/screenshots/Screenshot (5).png>)
+
+   - Then i used argocd Ui in broswer using defult user admin and get password with 
+   ```bash
+   kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d && echo
+   ```
+   - I accessed the ui using ports in (argocd-server) http://vm-public-ip:30761
+    And create new app with
+       - my gitHub repository link
+       - set the path to the Kubernetes
+       - Chose the appropriate cluster and namespace for deployment
+  - Finally to enshure app is running successfully -> show pods it must ne **Running**
+  ![alt text](<assets/screenshots/Screenshot (7).png>)
+  --- 
+  
+  
+
+   
+   
+  
+
+
+
+
+    
 
 
     
