@@ -13,17 +13,17 @@
         enabled: true
         state: started
 
-# - name: Configure and Install Docker on Oracle VM (CentOS)
-#   hosts: oracle-vm
-#   become: yes
-#   tasks:
-#     - name: Install Docker
-#       yum:
-#         name: docker
-#         state: present
+- name: Configure and Install Docker on Oracle VM (CentOS)
+  hosts: oracle-vm
+  become: yes
+  tasks:
+    - name: Install Docker
+      yum:
+        name: docker
+        state: present
 
-#     - name: Start and enable Docker service
-#       systemd:
-#         name: docker
-#         enabled: true
-#         state: started
+    - name: Start and enable Docker service
+      systemd:
+        name: docker
+        enabled: true
+        state: started
