@@ -209,7 +209,7 @@ repo. If a change is detected, the new image should be pulled With auto update.
         kubectl get services
         kubectl get pods
         ```
-        ![alt text](<assets/screenshots/Screenshot (4).png>)
+        ![alt text](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/Screenshot%20(4).png)
 
     - finally can access my app through the port from service in browser in my case 31800 - http://VM_ip:31800
 
@@ -220,7 +220,7 @@ repo. If a change is detected, the new image should be pulled With auto update.
    ```bash
    kubectl get pods -n argocd
    ```
-   ![alt text](<assets/screenshots/Screenshot (5).png>)
+   ![alt text](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/Screenshot%20(5).png)
 
    - Then i used argocd Ui in broswer using defult user admin and get password with 
    ```bash
@@ -232,7 +232,7 @@ repo. If a change is detected, the new image should be pulled With auto update.
        - set the path to the Kubernetes
        - chose the cluster and namespace for deployment
   - Finally to enshure app is running successfully -> show pods it must ne **Running**
-  ![alt text](<assets/screenshots/Screenshot (7).png>)
+  ![alt text](https://github.com/horiaahmed/DevOps-Internship-Assessment-Todo-List-Nodejs/blob/main/assets/screenshots/Screenshot%20(7).png)
   --- 
 
 ## Skills
