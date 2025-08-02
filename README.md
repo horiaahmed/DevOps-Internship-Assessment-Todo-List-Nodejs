@@ -112,9 +112,14 @@ Docker.
   - After installation i defiend ansible directory structure that has:
      - inventory folder with .ini file where i defined the hosts under groups to be managed
      - playbook .yml file that has instructions that run on the hosts using groups 
-  - Then run the ansible with playbook with 
+     - host_vars folder with .yml file to encrypt each machine sercerts
+  - Encrypt using **Vault**
   ```bash
-  ansible-playbook -i inventory/host.ini playbook.yml
+  ansible-vault encrypt host_vars/filename.yml
+  ```
+  - Then run the ansible with playbook with vault
+  ```bash
+  ansible-playbook -i inventory/host.ini playbook.yml --ask-vault-pass
   ```
   - First use one host (aws-ec2)  
   - Machine configured,docker installed and started it successfully 
