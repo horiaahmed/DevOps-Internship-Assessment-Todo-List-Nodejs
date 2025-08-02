@@ -1,8 +1,6 @@
-- name: Configure and Install Docker on Cloud VM
-  hosts: cloud-servers
+- name: Configure and Install Docker on VM(ec2)
+  hosts: aws-server
   become: yes
-  vars_files:
-    - vault.yml
   tasks:
     - name: Install Docker
       apt:
@@ -14,13 +12,10 @@
         name: docker
         enabled: true
         state: started
-        
 
 - name: Configure and Install Docker on Oracle VM (CentOS)
   hosts: oracle-vm
   become: yes
-  vars_files:
-    - vault.yml
   tasks:
     - name: Install Docker
       yum:
@@ -32,4 +27,3 @@
         name: docker
         enabled: true
         state: started
-
