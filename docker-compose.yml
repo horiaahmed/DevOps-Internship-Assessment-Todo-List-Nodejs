@@ -9,21 +9,20 @@ services:
     env_file:
       - .env
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost"]
+      test: ["CMD", "curl", "-f", "http://localhost:4000"]
       interval: 20s
       timeout: 10s
       retries: 3
       start_period: 10s 
 
-  # watchtower:
-  #   image: containrrr/watchtower
-  #   container_name: watchtower
-  #   volumes:
-  #     - /var/run/docker.sock:/var/run/docker.sock
-  #     - /.docker/config.json:/config.json
-  #   command: --interval 30 --cleanup todos_container
-  #   environment:
-  #     - WATCHTOWER_DOCKER_CONFIG=/config.json
-  #     - WATCHTOWER_POLL_INTERVAL=30
-  #     - WATCHTOWER_CLEANUP=true
-  #   restart: unless-stopped
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/ubuntu/.docker/config.json:/config.json 
+    command: --interval 30 --cleanup todos_container
+    environment:
+      - WATCHTOWER_POLL_INTERVAL=30
+      - WATCHTOWER_CLEANUP=true
+    restart: unless-stopped
