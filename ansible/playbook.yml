@@ -1,5 +1,5 @@
-- name: Configure and Install Docker on VM(ec2)
-  hosts: aws-server
+- name: Configure and Install Docker on Cloud VM
+  hosts: cloud-servers
   become: yes
   tasks:
     - name: Install Docker

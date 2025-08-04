@@ -1,7 +1,7 @@
 FROM node:20-alpine as base
 # Install curl
 RUN apk update && apk add curl
-COPY package*.json .
+# COPY package*.json .
 WORKDIR /todos_app
 EXPOSE 4000
 
